@@ -1,0 +1,10 @@
+name: WerseTokens
+version: '1.0-SNAPSHOT'
+main: werse.jarvis.werseTokens.WerseTokens
+api-version: '1.20'
+softdepend:
+  - PlaceholderAPI
+commands:
+  tokens:
+    description: "Włącza lub wyłącza Jarvisa dla gracza."
+    usage: "/tokens"
