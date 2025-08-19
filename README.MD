@@ -1,20 +1,19 @@
 # 🎟️ WerseTokens
 
-**WerseTokens** to prosty i lekki plugin do **Minecraft** dodający nową walutę premium – **Tokeny** – które mogą być używane przez graczy oraz zarządzane przez administratorów.
+**WerseTokens** is a simple and lightweight **Minecraft** plugin that introduces a premium currency – **Tokens** – which can be used by players and managed by administrators.
 
-# ✨ Funkcje
-- Łatwa konfiguracja wszystkich wiadomości (obsługa HEX `&#RRGGBB` w prefixie).
-- Obsługa komend zarówno z poziomu gracza, jak i konsoli (np. integracja ze sklepem WWW).
-- System permisji rozdzielający uprawnienia graczy i administratorów.
-- Komenda **Top 10** z możliwością personalizacji wyglądu listy.
-- Placeholder `%wersetokens_amount%` do integracji z innymi pluginami.
-
+# ✨ Features
+- Easy configuration of all messages (supports HEX `&#RRGGBB` in prefix).
+- Commands available both from player and console (e.g., integration with web stores).
+- Permission system separating player and admin commands.
+- **Top 10** command with customizable list format.
+- Placeholder `%wersetokens_amount%` for integration with other plugins.
 ---
 
-# ⚙️ Konfiguracja (`config.yml`)
-Przykładowy plik konfiguracyjny:
+# ⚙️ Configuration (`config.yml`)
+Example configuration file:
 ```yaml
-#Sekcja PREFIX pojawia się zawsze przed wiadomością i obsługuje HEX w formacie &#RRGGBB
+# PREFIX section always appears before a message and supports HEX in the format &#RRGGBB
 PREFIX: "[WerseTokens]: "
 messages:
   adminAddTokensToPlayer: "Added %value% to %player% balance!"
@@ -38,52 +37,51 @@ balanceTop:
   list: "%number%. %player% - %value% Tokens"
   footer: "Your Position : %position%\nYour value %value%"
 ```
-# 📝 Komendy i Permisje
+# 📝 Commands & Permissions
 ## 👑 Admin
 
-/tokens add <player> <amount> – dodaje tokeny
-Permisja: wersetokens.addtokens
+/tokens add <player> <amount> – add tokens
+Permission: wersetokens.addtokens
 
-/tokens remove <player> <amount> – usuwa tokeny
-Permisja: wersetokens.removetokens
+/tokens remove <player> <amount> – remove tokens
+Permission: wersetokens.removetokens
 
-/tokens set <player> <amount> – ustawia saldo tokenów
-Permisja: wersetokens.settokens
+/tokens set <player> <amount> – set token balance
+Permission: wersetokens.settokens
 
-/tokens adminbalance <player> – sprawdza saldo gracza
-Permisja: wersetokens.adminbalance
+/tokens adminbalance <player> – check player balance
+Permission: wersetokens.adminbalance
 
-## 🎮 Gracz
+## 🎮 Player
 
-/tokens balance – sprawdza własne saldo
-Permisja: wersetokens.balance
+/tokens balance – check own balance
+Permission: wersetokens.balance
 
-/tokens give <player> <amount> – przekazuje tokeny innemu graczowi
-Permisja: wersetokens.pay
+/tokens give <player> <amount> – give tokens to another player
+Permission: wersetokens.pay
 
 ## 📊 Balance Top
 
-Wyświetla ranking graczy z największą liczbą tokenów.
+Displays a ranking of players with the most tokens.
 
-Nagłówek, lista i stopka są w pełni konfigurowalne.
+Header, list, and footer are fully configurable.
 
-Wyświetla również pozycję oraz saldo gracza, nawet jeśli nie jest w TOP 10.
+Shows the player’s own position and balance, even if they are not in the TOP 10.
 
-## 🧩 Placeholdery
+## 🧩 Placeholders (PlaceholderAPI required)
 
-%wersetokens_amount% – aktualna liczba tokenów gracza.
+%wersetokens_amount% – the player’s current token balance.
 
-## 🛠️ Instalacja
+## 🛠️ Installation
 
-Pobierz najnowszą wersję pluginu z Releases
-.
+Download the latest plugin version from Releases.
 
-Wrzuć plik .jar do folderu plugins na serwerze.
+Place the .jar file in your server’s plugins folder.
 
-Uruchom serwer, aby wygenerował się plik config.yml.
+Start the server to generate the config.yml.
 
-Dostosuj konfigurację do swoich potrzeb.
+Customize the configuration to your needs.
 
-## 📜 Licencja
+# 📜 License
 
-Projekt dostępny na licencji MIT – możesz używać, modyfikować i rozwijać plugin w dowolny sposób.
+This project is available under the MIT License – you are free to use, modify, and distribute it.
