@@ -16,12 +16,10 @@ public final class WerseTokens extends JavaPlugin {
 
         if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
             new RegisterPlaceholder(this).register();
-            getLogger().info("PlaceholderAPI zarejestrowano pomyślnie.");
+            getLogger().info("PlaceholderAPI Hook enabled");
         } else {
-            getLogger().warning("PlaceholderAPI nie zostało znalezione. Placeholdery nie będą działać.");
+            getLogger().warning("PlaceholderAPI no detected placeholders will no work!");
         }
-
-        getLogger().info("Plugin WerseTokens się włącza...");
 
         if (getCommand("tokens") == null) {
             getLogger().severe("Komenda /tokens nie została załadowana! Sprawdź plugin.yml.");
