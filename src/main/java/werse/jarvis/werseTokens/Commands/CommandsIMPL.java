@@ -334,7 +334,7 @@ public class CommandsIMPL {
                 if (playerPosition != -1) {
                     player.sendMessage(balTopFooter.replaceAll("%position%", String.valueOf(playerPosition)).replaceAll("%value%", String.valueOf(playerTokens)));
                 } else {
-                    player.sendMessage("§cNie masz jeszcze żadnych tokenów.");
+                    Bukkit.getLogger().info(prefix + "Problem in finding position of player report this to developer");
                 }
             }
         }

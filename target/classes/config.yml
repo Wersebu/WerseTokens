@@ -31,3 +31,5 @@ balanceTop:
 # Players:
 # wersetokens.pay <- /tokens give %player% %amount%
 # wersetokens.balance <- /tokens balance
+# Placeholders:
+# %wersetokens_amount%
