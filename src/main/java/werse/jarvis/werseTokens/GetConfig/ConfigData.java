@@ -1,9 +1,6 @@
 package werse.jarvis.werseTokens.GetConfig;
 
-import net.md_5.bungee.api.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.FileReader;
 
 public class ConfigData {
     private final JavaPlugin plugin;

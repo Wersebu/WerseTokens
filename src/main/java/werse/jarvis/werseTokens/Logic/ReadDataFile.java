@@ -23,14 +23,13 @@ public class ReadDataFile {
 
         File database = new File(pathToDataFile);
         if (!database.exists()) {
-            database.getParentFile().mkdirs(); // Tworzymy katalogi, jeśli ich nie ma
+            database.getParentFile().mkdirs();
             try {
                 database.createNewFile();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
-
 
         HashMap<String, Integer> updateData = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(pathToDataFile))) {

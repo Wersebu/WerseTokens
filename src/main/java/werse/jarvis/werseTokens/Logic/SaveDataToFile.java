@@ -18,7 +18,7 @@ public class SaveDataToFile {
 
         File database = new File(pathToDataFile);
         if (!database.exists()) {
-            database.getParentFile().mkdirs(); // Tworzymy katalogi, jeśli ich nie ma
+            database.getParentFile().mkdirs();
             try {
                 database.createNewFile();
             } catch (IOException e) {
@@ -26,7 +26,6 @@ public class SaveDataToFile {
             }
         }
 
-        // Zapisujemy całą mapę z powrotem do pliku
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(pathToDataFile))) {
             for (HashMap.Entry<String, Integer> entry : updateData.entrySet()) {
                 writer.write(entry.getKey() + ": " + entry.getValue());

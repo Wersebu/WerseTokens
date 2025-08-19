@@ -3,7 +3,7 @@ package werse.jarvis.werseTokens;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import werse.jarvis.werseTokens.Commands.CommandsHandler;
-import werse.jarvis.werseTokens.Commands.SetDeafultAmout.SetDeafultAmoutOnJoin;
+import werse.jarvis.werseTokens.Commands.PlayerJoinEventHandler;
 import werse.jarvis.werseTokens.ConsoleLogs.StartServerMessage;
 import werse.jarvis.werseTokens.PlaceholderAPI.RegisterPlaceholder;
 
@@ -31,7 +31,7 @@ public final class WerseTokens extends JavaPlugin {
             getCommand("tokens").setExecutor(commandsHandler);
             getCommand("tokens").setTabCompleter(commandsHandler);
         }
-        getServer().getPluginManager().registerEvents(new SetDeafultAmoutOnJoin(this),this);
+        getServer().getPluginManager().registerEvents(new PlayerJoinEventHandler(this),this);
 
     }
 

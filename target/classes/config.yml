@@ -1,2 +1,33 @@
 #Sekcja PREFIX pojaiwa się zawsze przed wiadomością i obsłóguje HEX w formacie &#RRGGBB
-PREFIX: "WerseTokens: "
+PREFIX: "[WerseTokens]: "
+messages:
+  adminAddTokensToPlayer: "Added %value% to %player% balance!"
+  adminRemoveTokensFromPlayer: "Removed %value% from %player% balance!"
+  adminSetTokensPlayer: "New balance of tokens for %player% has been set to %value%!"
+  playerReceivedTokensFromAdmin: "Server just added %value% Token's to your balance!"
+  playerGiveTokensToPlayer: "You just gave %value% Tokens to %player%"
+  playerReceivedTokensFromPlayer: "You just received %value% tokens from %player%"
+  playerRemovedTokensByAdmin: "%value% tokens hes been removed from your account"
+  playerInfoSetTokensByAdmin: "Your balance is now %value% tokens"
+  adminCheckBalanceOfPlayer: "Token balance of %player% is %value%"
+  playerCheckSelfBalance: "Your Token Balance is %value%"
+errors:
+  noPermission: "You do not have permission %permission% to do this!"
+  noPlayerOnline: "Your target player %player% is wrong or he's offline"
+  noEnoughTokens: "You don't have enough tokens to do this"
+  noConsole: "Only players can execute this command!"
+balanceTop:
+  header: "--- TOP 10 Tokens ---"
+  maxPlayersInList: 10
+  list: "%number%. %player% - %value% Tokens"
+  footer: "Your Position : %position%\nYour value %value%"
+#
+#Permissions:
+# Admins:
+# wersetokens.addtokens <- /tokens add %player% %amount%
+# wersetokens.removetokens <- /tokens remove %player% %amount%
+# wersetokens.settokens <- /tokens set %player% %amount%
+# wersetokens.adminbalance <- /tokens adminbalance %player%
+# Players:
+# wersetokens.pay <- /tokens give %player% %amount%
+# wersetokens.balance <- /tokens balance

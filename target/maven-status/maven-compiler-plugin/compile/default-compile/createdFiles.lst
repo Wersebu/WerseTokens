@@ -8,6 +8,7 @@ werse\jarvis\werseTokens\Commands\PlayerCommands\TokenBalance.class
 werse\jarvis\werseTokens\Commands\AdminCommands\SetTokens.class
 werse\jarvis\werseTokens\Commands\SetDeafultAmout\SetDeafultAmoutOnJoin.class
 werse\jarvis\werseTokens\GetConfig\ColorChat.class
+werse\jarvis\werseTokens\Commands\AdminCommands\CommandsIMPL.class
 werse\jarvis\werseTokens\PlaceholderAPI\RegisterPlaceholder.class
 werse\jarvis\werseTokens\GetConfig\ConfigData.class
 werse\jarvis\werseTokens\Commands\SetDeafultAmout\SetDeafultAmount.class
