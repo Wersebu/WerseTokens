@@ -11,7 +11,7 @@
 ---
 
 # ⚙️ Configuration (`config.yml`)
-Example configuration file:
+Default configuration file:
 ```yaml
 # PREFIX section always appears before a message and supports HEX in the format &#RRGGBB
 PREFIX: "[WerseTokens]: "
@@ -40,25 +40,25 @@ balanceTop:
 # 📝 Commands & Permissions
 ## 👑 Admin
 
-/tokens add <player> <amount> – add tokens
-Permission: wersetokens.addtokens
+- /tokens add <player> <amount> – add tokens
+    - Permission: wersetokens.addtokens
 
-/tokens remove <player> <amount> – remove tokens
-Permission: wersetokens.removetokens
+- /tokens remove <player> <amount> – remove tokens
+  - Permission: wersetokens.removetokens
 
-/tokens set <player> <amount> – set token balance
-Permission: wersetokens.settokens
+- /tokens set <player> <amount> – set token balance
+  - Permission: wersetokens.settokens
 
-/tokens adminbalance <player> – check player balance
-Permission: wersetokens.adminbalance
+- /tokens adminbalance <player> – check player balance
+  - Permission: wersetokens.adminbalance
 
 ## 🎮 Player
 
-/tokens balance – check own balance
-Permission: wersetokens.balance
+- /tokens balance – check own balance
+  - Permission: wersetokens.balance
 
-/tokens give <player> <amount> – give tokens to another player
-Permission: wersetokens.pay
+- /tokens give <player> <amount> – give tokens to another player
+  - Permission: wersetokens.pay
 
 ## 📊 Balance Top
 
