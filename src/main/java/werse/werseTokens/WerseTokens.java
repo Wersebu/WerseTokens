@@ -1,11 +1,11 @@
-package werse.jarvis.werseTokens;
+package werse.werseTokens;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import werse.jarvis.werseTokens.Commands.CommandsHandler;
-import werse.jarvis.werseTokens.Commands.PlayerJoinEventHandler;
-import werse.jarvis.werseTokens.ConsoleLogs.StartServerMessage;
-import werse.jarvis.werseTokens.PlaceholderAPI.RegisterPlaceholder;
+import werse.werseTokens.Commands.CommandsHandler;
+import werse.werseTokens.Commands.PlayerJoinEventHandler;
+import werse.werseTokens.ConsoleLogs.StartServerMessage;
+import werse.werseTokens.PlaceholderAPI.RegisterPlaceholder;
 
 public final class WerseTokens extends JavaPlugin {
 

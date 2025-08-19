@@ -1,4 +1,4 @@
-package werse.jarvis.werseTokens.GetConfig;
+package werse.werseTokens.GetConfig;
 
 import net.md_5.bungee.api.ChatColor;
 

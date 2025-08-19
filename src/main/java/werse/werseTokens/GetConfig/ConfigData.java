@@ -1,4 +1,4 @@
-package werse.jarvis.werseTokens.GetConfig;
+package werse.werseTokens.GetConfig;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

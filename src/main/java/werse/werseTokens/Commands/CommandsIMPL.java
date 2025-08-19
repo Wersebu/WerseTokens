@@ -1,12 +1,12 @@
-package werse.jarvis.werseTokens.Commands;
+package werse.werseTokens.Commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import werse.jarvis.werseTokens.GetConfig.ConfigData;
-import werse.jarvis.werseTokens.Logic.ReadDataFile;
-import werse.jarvis.werseTokens.Logic.SaveDataToFile;
+import werse.werseTokens.GetConfig.ConfigData;
+import werse.werseTokens.Logic.ReadDataFile;
+import werse.werseTokens.Logic.SaveDataToFile;
 
 import java.util.ArrayList;
 import java.util.HashMap;

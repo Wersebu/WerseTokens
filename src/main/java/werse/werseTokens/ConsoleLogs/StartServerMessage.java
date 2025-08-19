@@ -1,4 +1,4 @@
-package werse.jarvis.werseTokens.ConsoleLogs;
+package werse.werseTokens.ConsoleLogs;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

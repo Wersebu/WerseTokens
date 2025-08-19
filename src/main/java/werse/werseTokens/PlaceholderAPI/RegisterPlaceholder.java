@@ -1,11 +1,11 @@
-package werse.jarvis.werseTokens.PlaceholderAPI;
+package werse.werseTokens.PlaceholderAPI;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
-import werse.jarvis.werseTokens.Logic.ReadDataFile;
+import werse.werseTokens.Logic.ReadDataFile;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package werse.jarvis.werseTokens.Commands;
+package werse.werseTokens.Commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import werse.jarvis.werseTokens.GetConfig.ConfigData;
+import werse.werseTokens.GetConfig.ConfigData;
 
 import java.util.ArrayList;
 import java.util.List;

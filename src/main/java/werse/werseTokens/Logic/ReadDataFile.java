@@ -1,4 +1,4 @@
-package werse.jarvis.werseTokens.Logic;
+package werse.werseTokens.Logic;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
